@@ -1,5 +1,8 @@
 # CI Seed Registry — Data Pipeline
 
+[![DOI](https://zenodo.org/badge/1221929074.svg)](https://doi.org/10.5281/zenodo.19800772)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Owner:** Shannon Goddard — Loyal9 LLC
 **Status:** Active
 
@@ -17,6 +20,7 @@ NEW-SEEDS-LAW/
 │   ├── 05_seed_breeders/             # Breeder master + CA registered seed sellers
 │   └── pdf-to-csv.html              # In-browser PDF-to-CSV converter (client-side, no install)
 ├── raw.csv                            # Published dataset — 13,119 US cannabis/hemp businesses
+├── raw.json                           # Same dataset in JSON format
 ├── SOURCE.md                          # Data dictionary, methodology, citation info for DOI
 └── README.md                          # This file
 ```
@@ -25,11 +29,11 @@ Each pipeline folder has its own README with source details, scripts, and output
 
 ---
 
-## raw.csv
+## raw.csv / raw.json
 
-📥 [Download raw.csv](raw.csv)
+📥 [Download raw.csv](raw.csv) · 📥 [Download raw.json](raw.json)
 
-The published dataset. 13,119 records across 27 US states. 22 columns.
+The published dataset. 13,119 records across 27 US states. 22 columns. Available in CSV and JSON formats.
 
 | Type | Count |
 |---|---|
@@ -47,7 +51,11 @@ See `SOURCE.md` for full column reference, methodology, known limitations, and c
 
 ## DOI
 
-`DOI: 10.5281/zenodo.XXXXXXX` <!-- Replace with actual DOI once published -->
+`DOI: 10.5281/zenodo.19800772`
+
+### How to Cite
+
+> Goddard, S., & Amazon Q. (2026). *CI Seed Registry: US Cannabis & Hemp License Directory* (Version 1.0) [Data set]. Loyal9 LLC. https://doi.org/10.5281/zenodo.19800772
 
 ---
 

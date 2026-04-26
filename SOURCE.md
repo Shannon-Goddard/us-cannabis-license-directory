@@ -152,7 +152,7 @@ Full pipeline documentation, processing scripts, and raw source files are availa
 
 If you use this dataset, please cite:
 
-> Goddard, S., & Amazon Q. (2026). *CI Seed Registry: US Cannabis & Hemp License Directory* (Version 1.0) [Data set]. Loyal9 LLC. https://doi.org/[DOI]
+> Goddard, S., & Amazon Q. (2026). *CI Seed Registry: US Cannabis & Hemp License Directory* (Version 1.0) [Data set]. Loyal9 LLC. https://doi.org/10.5281/zenodo.19800772
 
 ---
 
