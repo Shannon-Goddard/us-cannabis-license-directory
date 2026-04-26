@@ -1,0 +1,32 @@
+source_name,match_type,fuzzy_slug,breeder_master_name,is_hit
+The Alchemy,name,alchemy,Alchemy Genetics,FALSE
+ALTITUDE,name,altitude,Altitude Genetics,FALSE
+Amsterdam Farms LLC,name,amsterdam,Amsterdam Genetics,FALSE
+"Ceres Farm, LLC",name,ceres,Ceres Seeds,FALSE
+"Ceres Farm, LLC",dba,ceres,Ceres Seeds,FALSE
+"CERES FARM, LLC",dba,ceres,Ceres Seeds,FALSE
+DANK,name,dank,Dank Genetics,FALSE
+Dark Horse,name,darkhorse,Dark Horse Genetics,FALSE
+Dr. Greenthumb,name,drgreenthumb,Dr. Greenthumb,FALSE
+Exotic Farms LLC,name,exotic,Exotic Seed,FALSE
+FREE WORLD GENETICS,name,freeworld,Freeworld Genetics,TRUE
+GOODFELLAS,name,goodfellas,Goodfellas Seeds,FALSE
+Green Field,name,greenfield,Greenfield Seeds,FALSE
+GREENHAND,name,greenhand,Greenhand Genetics,FALSE
+THE GREENHOUSE,name,greenhouse,Green House Seeds,FALSE
+The Green House,name,greenhouse,Green House Seeds,FALSE
+"Green Rose Farm, LLC",dba,greenrose,Green Rose Seeds,FALSE
+Humboldt Seed Company,name,humboldtseed,Humboldt Seed Company,TRUE
+Jungle Boys,name,jungleboys,Jungle Boys,FALSE
+MAKENA,name,makena,Makena Genetics,FALSE
+Nirvana,name,nirvana,Nirvana Seeds,FALSE
+Organic Farms,name,organic,Organic Seeds,FALSE
+Phat Panda,name,phatpanda,Phat Panda,TRUE
+The Plant,name,plant,The Plant,FALSE
+Purple City Genetics,name,purplecity,Purple City Genetics,TRUE
+PYRAMID,name,pyramid,Pyramid Seeds,FALSE
+RARE DANKNESS,name,raredankness,Rare Dankness Seeds,TRUE
+"Rebel Grown, LLC",dba,rebelgrown,Rebel Grown,FALSE
+SERIOUS ENTERPRISES LLC,dba,serious,Serious Seeds,FALSE
+"TWENTY20, INC.",dba,twenty20,Twenty 20 Genetics,FALSE
+Wizard Trees,name,wizardtrees,Wizard Trees,TRUE

@@ -1,0 +1,11 @@
+Facility_ID,Inspection_Num,Inspection_Date,Inspection_Type,Location_Type,Worksheet_Type,License_Number,Status
+001t000000L0TAwAAN,INSP-0163450,11/17/2025,Compliance (Annual),Retail Site,Dispensary,00000123DCYU00460808,Complete
+001t000000L0TAwAAN,INSP-0163449,11/17/2025,Compliance (Annual),Retail Site,Establishment,00000107ESVJ79465811,Complete
+001t000000L0TAwAAN,INSP-0052260,1/23/2025,Initial Monitoring,Retail Site,Dispensary,00000123DCYU00460808,Complete
+001t000000L0TAwAAN,INSP-0052259,1/23/2025,Initial Monitoring,Retail Site,Establishment,00000107ESVJ79465811,Complete
+001t000000L0TAwAAN,INSP-0050889,12/2/2024,Compliance (Initial),Retail Site,Establishment,00000107ESVJ79465811,Complete
+001t000000L0TAwAAN,INSP-0050888,12/2/2024,Compliance (Initial),Dispensary,Dispensary,00000123DCYU00460808,Complete
+001t000000L0TAwAAN,INSP-0045397,6/25/2024,Compliance (Annual),Retail Site,Dispensary,00000123DCYU00460808,Complete
+001t000000L0TAwAAN,INSP-0045396,6/25/2024,Compliance (Annual),Retail Site,Establishment,00000107ESVJ79465811,Complete
+001t000000L0TAwAAN,INSP-0029887,7/21/2023,Compliance (Annual),Retail Site,Establishment,00000107ESVJ79465811,Complete
+001t000000L0TAwAAN,INSP-0029888,7/21/2023,Compliance (Annual),Retail Site,Dispensary,00000123DCYU00460808,Complete

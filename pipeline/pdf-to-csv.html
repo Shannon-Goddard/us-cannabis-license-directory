@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF to CSV Converter</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #f0f2f5; color: #222; min-height: 100vh; }
+
+  header {
+    background: #1a3a5c;
+    color: #fff;
+    padding: 18px 32px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+  }
+
+  .container { max-width: 1100px; margin: 32px auto; padding: 0 20px; }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    padding: 28px 32px;
+    margin-bottom: 24px;
+  }
+
+  .card h2 { font-size: 1rem; color: #1a3a5c; margin-bottom: 16px; text-transform: uppercase; letter-spacing: .5px; }
+
+  /* Drop zone */
+  #dropzone {
+    border: 2px dashed #1a3a5c;
+    border-radius: 8px;
+    padding: 48px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background .2s;
+    color: #555;
+  }
+  #dropzone.over { background: #e8f0fe; }
+  #dropzone svg { display: block; margin: 0 auto 12px; }
+  #dropzone p { font-size: .95rem; }
+  #dropzone span { color: #1a3a5c; font-weight: bold; text-decoration: underline; cursor: pointer; }
+  #fileInput { display: none; }
+
+  /* Options */
+  .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  label.opt-label { font-size: .85rem; color: #555; display: block; margin-bottom: 4px; }
+  select, input[type=text] {
+    width: 100%; padding: 8px 10px; border: 1px solid #ccc;
+    border-radius: 5px; font-size: .9rem;
+  }
+  .checkbox-row { display: flex; align-items: center; gap: 8px; font-size: .9rem; margin-top: 8px; }
+  .checkbox-row input { width: 16px; height: 16px; cursor: pointer; }
+
+  /* Buttons */
+  .btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+  button {
+    padding: 10px 22px; border: none; border-radius: 5px;
+    font-size: .9rem; cursor: pointer; font-weight: bold; transition: opacity .15s;
+  }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  #btnConvert { background: #1a3a5c; color: #fff; }
+  #btnDownload { background: #2e7d32; color: #fff; }
+  #btnClear { background: #e0e0e0; color: #333; }
+
+  /* Progress */
+  #progressWrap { display: none; margin-top: 16px; }
+  #progressBar { width: 100%; height: 10px; background: #e0e0e0; border-radius: 5px; overflow: hidden; }
+  #progressFill { height: 100%; width: 0; background: #1a3a5c; transition: width .2s; }
+  #progressLabel { font-size: .82rem; color: #555; margin-top: 6px; }
+
+  /* Preview table */
+  #previewWrap { display: none; }
+  .table-scroll { overflow-x: auto; max-height: 380px; overflow-y: auto; border: 1px solid #ddd; border-radius: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: .82rem; }
+  th { background: #1a3a5c; color: #fff; padding: 8px 10px; text-align: left; position: sticky; top: 0; white-space: nowrap; }
+  td { padding: 6px 10px; border-bottom: 1px solid #eee; white-space: nowrap; max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+  tr:hover td { background: #f5f8ff; }
+
+  #statsBar { font-size: .85rem; color: #555; margin-bottom: 10px; }
+  #statsBar strong { color: #1a3a5c; }
+
+  /* Raw text area */
+  #rawWrap { display: none; margin-top: 16px; }
+  textarea#rawText {
+    width: 100%; height: 220px; font-family: monospace; font-size: .78rem;
+    border: 1px solid #ccc; border-radius: 5px; padding: 10px; resize: vertical;
+  }
+
+  .file-tag {
+    display: inline-block; background: #e8f0fe; color: #1a3a5c;
+    border-radius: 4px; padding: 3px 10px; font-size: .82rem; margin: 4px 4px 0 0;
+  }
+  #fileList { margin-top: 10px; }
+
+  .toggle-link { font-size: .8rem; color: #1a3a5c; cursor: pointer; text-decoration: underline; margin-left: 12px; }
+</style>
+</head>
+<body>
+
+<header>&#128196; PDF to CSV Converter</header>
+
+<div class="container">
+
+  <!-- Drop zone -->
+  <div class="card">
+    <h2>1 — Select PDF(s)</h2>
+    <div id="dropzone">
+      <svg width="48" height="48" fill="none" stroke="#1a3a5c" stroke-width="1.5" viewBox="0 0 24 24">
+        <path d="M12 16V4m0 0L8 8m4-4 4 4"/><rect x="3" y="14" width="18" height="7" rx="2"/>
+      </svg>
+      <p>Drag &amp; drop PDF files here, or <span onclick="document.getElementById('fileInput').click()">browse</span></p>
+      <p style="font-size:.78rem;margin-top:6px;color:#888">Multiple files supported — each becomes its own sheet / section</p>
+    </div>
+    <input type="file" id="fileInput" accept=".pdf" multiple>
+    <div id="fileList"></div>
+  </div>
+
+  <!-- Options -->
+  <div class="card">
+    <h2>2 — Extraction Options</h2>
+    <div class="options-grid">
+      <div>
+        <label class="opt-label">Column delimiter</label>
+        <select id="delimiter">
+          <option value=",">Comma  ( , )</option>
+          <option value="&#9;">Tab  ( \t )</option>
+          <option value=";">Semicolon  ( ; )</option>
+          <option value="|">Pipe  ( | )</option>
+        </select>
+      </div>
+      <div>
+        <label class="opt-label">Column split strategy</label>
+        <select id="splitMode">
+          <option value="whitespace">Split on 2+ spaces (table-like PDFs)</option>
+          <option value="tab">Split on tabs</option>
+          <option value="none">One column per line (raw text)</option>
+        </select>
+      </div>
+      <div>
+        <label class="opt-label">Skip header rows (per page)</label>
+        <input type="text" id="skipRows" value="0" style="width:80px">
+      </div>
+      <div>
+        <label class="opt-label">Custom column headers (comma-separated, optional)</label>
+        <input type="text" id="customHeaders" placeholder="e.g. Name,Company,Email,Phone,County">
+      </div>
+    </div>
+    <div class="checkbox-row" style="margin-top:14px">
+      <input type="checkbox" id="skipBlank" checked>
+      <label for="skipBlank">Skip blank lines</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="trimCells" checked>
+      <label for="trimCells">Trim whitespace from cells</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="includePageNum">
+      <label for="includePageNum">Add "Page" column</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="includeFileName">
+      <label for="includeFileName">Add "Source File" column</label>
+    </div>
+  </div>
+
+  <!-- Convert -->
+  <div class="card">
+    <h2>3 — Convert &amp; Download</h2>
+    <div class="btn-row">
+      <button id="btnConvert" disabled>&#9654; Convert</button>
+      <button id="btnDownload" disabled>&#11015; Download CSV</button>
+      <button id="btnClear">&#10005; Clear</button>
+    </div>
+    <div id="progressWrap">
+      <div id="progressBar"><div id="progressFill"></div></div>
+      <div id="progressLabel">Processing…</div>
+    </div>
+  </div>
+
+  <!-- Preview -->
+  <div class="card" id="previewWrap">
+    <h2>Preview <span class="toggle-link" id="toggleRaw" onclick="toggleRaw()">show raw text</span></h2>
+    <div id="statsBar"></div>
+    <div class="table-scroll">
+      <table id="previewTable"></table>
+    </div>
+    <div id="rawWrap">
+      <textarea id="rawText" readonly></textarea>
+    </div>
+  </div>
+
+</div>
+
+<!-- PDF.js from CDN (no install needed) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+let csvContent = '';
+let rawContent = '';
+let selectedFiles = [];
+
+// ── Drag & drop ──────────────────────────────────────────────────────────────
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+
+dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('over'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('over'));
+dropzone.addEventListener('drop', e => {
+  e.preventDefault(); dropzone.classList.remove('over');
+  addFiles([...e.dataTransfer.files].filter(f => f.type === 'application/pdf'));
+});
+fileInput.addEventListener('change', () => addFiles([...fileInput.files]));
+
+function addFiles(files) {
+  files.forEach(f => { if (!selectedFiles.find(x => x.name === f.name)) selectedFiles.push(f); });
+  renderFileList();
+  document.getElementById('btnConvert').disabled = selectedFiles.length === 0;
+}
+
+function renderFileList() {
+  const el = document.getElementById('fileList');
+  el.innerHTML = selectedFiles.map((f, i) =>
+    `<span class="file-tag">${f.name} <a href="#" onclick="removeFile(${i});return false" style="color:#c00;text-decoration:none">&#10005;</a></span>`
+  ).join('');
+}
+
+function removeFile(i) {
+  selectedFiles.splice(i, 1);
+  renderFileList();
+  document.getElementById('btnConvert').disabled = selectedFiles.length === 0;
+}
+
+// ── Convert ──────────────────────────────────────────────────────────────────
+document.getElementById('btnConvert').addEventListener('click', convertAll);
+
+async function convertAll() {
+  const delimiter  = document.getElementById('delimiter').value;
+  const splitMode  = document.getElementById('splitMode').value;
+  const skipRows   = parseInt(document.getElementById('skipRows').value) || 0;
+  const skipBlank  = document.getElementById('skipBlank').checked;
+  const trimCells  = document.getElementById('trimCells').checked;
+  const addPage    = document.getElementById('includePageNum').checked;
+  const addFile    = document.getElementById('includeFileName').checked;
+  const hdrsRaw    = document.getElementById('customHeaders').value.trim();
+
+  const prog = document.getElementById('progressWrap');
+  const fill = document.getElementById('progressFill');
+  const label = document.getElementById('progressLabel');
+  prog.style.display = 'block';
+
+  let allRows = [];
+  rawContent  = '';
+
+  // Count total pages across all files for progress
+  let totalPages = 0;
+  const pdfDocs = [];
+  for (const file of selectedFiles) {
+    const buf = await file.arrayBuffer();
+    const doc = await pdfjsLib.getDocument({ data: buf }).promise;
+    pdfDocs.push({ doc, name: file.name });
+    totalPages += doc.numPages;
+  }
+
+  let donePages = 0;
+
+  for (const { doc, name } of pdfDocs) {
+    for (let p = 1; p <= doc.numPages; p++) {
+      const page    = await doc.getPage(p);
+      const content = await page.getTextContent();
+
+      // Reconstruct lines by grouping items with same Y coordinate
+      const byY = {};
+      for (const item of content.items) {
+        if (!item.str) continue;
+        const y = Math.round(item.transform[5]);
+        if (!byY[y]) byY[y] = [];
+        byY[y].push({ x: item.transform[4], str: item.str });
+      }
+
+      const ySorted = Object.keys(byY).map(Number).sort((a, b) => b - a);
+      const pageLines = ySorted.map(y => {
+        const items = byY[y].sort((a, b) => a.x - b.x);
+        return items.map(i => i.str).join(' ');
+      });
+
+      rawContent += `\n--- ${name} | Page ${p} ---\n` + pageLines.join('\n');
+
+      let lines = pageLines;
+      if (skipBlank) lines = lines.filter(l => l.trim() !== '');
+      lines = lines.slice(skipRows);
+
+      for (const line of lines) {
+        let cells;
+        if (splitMode === 'whitespace') {
+          cells = line.split(/\s{2,}/);
+        } else if (splitMode === 'tab') {
+          cells = line.split('\t');
+        } else {
+          cells = [line];
+        }
+        if (trimCells) cells = cells.map(c => c.trim());
+        if (addPage)   cells.push(String(p));
+        if (addFile)   cells.push(name);
+        allRows.push(cells);
+      }
+
+      donePages++;
+      const pct = Math.round((donePages / totalPages) * 100);
+      fill.style.width = pct + '%';
+      label.textContent = `Processing page ${donePages} of ${totalPages} (${name})…`;
+      await new Promise(r => setTimeout(r, 0)); // yield to UI
+    }
+  }
+
+  // Build CSV
+  const escape = v => {
+    const s = String(v ?? '');
+    return (s.includes(delimiter) || s.includes('"') || s.includes('\n'))
+      ? '"' + s.replace(/"/g, '""') + '"'
+      : s;
+  };
+
+  const lines = [];
+
+  // Optional custom header row
+  if (hdrsRaw) {
+    let hCells = hdrsRaw.split(',').map(h => h.trim());
+    if (addPage)  hCells.push('Page');
+    if (addFile)  hCells.push('Source File');
+    lines.push(hCells.map(escape).join(delimiter));
+  }
+
+  for (const row of allRows) {
+    lines.push(row.map(escape).join(delimiter));
+  }
+
+  csvContent = lines.join('\r\n');
+
+  label.textContent = `Done! ${allRows.length} rows extracted from ${totalPages} pages.`;
+  fill.style.width = '100%';
+
+  renderPreview(allRows, hdrsRaw, addPage, addFile, delimiter);
+  document.getElementById('btnDownload').disabled = false;
+  document.getElementById('rawText').value = rawContent;
+}
+
+// ── Preview ──────────────────────────────────────────────────────────────────
+function renderPreview(rows, hdrsRaw, addPage, addFile, delimiter) {
+  const wrap  = document.getElementById('previewWrap');
+  const table = document.getElementById('previewTable');
+  const stats = document.getElementById('statsBar');
+  wrap.style.display = 'block';
+
+  const maxCols = rows.reduce((m, r) => Math.max(m, r.length), 0);
+  const preview = rows.slice(0, 200);
+
+  let html = '<thead><tr>';
+  if (hdrsRaw) {
+    let hCells = hdrsRaw.split(',').map(h => h.trim());
+    if (addPage) hCells.push('Page');
+    if (addFile) hCells.push('Source File');
+    while (hCells.length < maxCols) hCells.push('');
+    html += hCells.map(h => `<th>${h}</th>`).join('');
+  } else {
+    for (let i = 0; i < maxCols; i++) html += `<th>Col ${i+1}</th>`;
+  }
+  html += '</tr></thead><tbody>';
+
+  for (const row of preview) {
+    html += '<tr>';
+    for (let i = 0; i < maxCols; i++) {
+      html += `<td title="${(row[i]||'').replace(/"/g,'&quot;')}">${row[i] || ''}</td>`;
+    }
+    html += '</tr>';
+  }
+  html += '</tbody>';
+  table.innerHTML = html;
+
+  stats.innerHTML = `<strong>${rows.length}</strong> rows &nbsp;|&nbsp; <strong>${maxCols}</strong> columns &nbsp;|&nbsp; showing first ${Math.min(200, rows.length)} rows`;
+}
+
+// ── Download ─────────────────────────────────────────────────────────────────
+document.getElementById('btnDownload').addEventListener('click', () => {
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = 'extracted.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+// ── Clear ────────────────────────────────────────────────────────────────────
+document.getElementById('btnClear').addEventListener('click', () => {
+  selectedFiles = [];
+  csvContent = rawContent = '';
+  renderFileList();
+  document.getElementById('btnConvert').disabled = true;
+  document.getElementById('btnDownload').disabled = true;
+  document.getElementById('progressWrap').style.display = 'none';
+  document.getElementById('previewWrap').style.display = 'none';
+  document.getElementById('progressFill').style.width = '0';
+  fileInput.value = '';
+});
+
+// ── Toggle raw text ──────────────────────────────────────────────────────────
+function toggleRaw() {
+  const rw  = document.getElementById('rawWrap');
+  const lnk = document.getElementById('toggleRaw');
+  if (rw.style.display === 'none' || !rw.style.display) {
+    rw.style.display = 'block';
+    lnk.textContent  = 'hide raw text';
+  } else {
+    rw.style.display = 'none';
+    lnk.textContent  = 'show raw text';
+  }
+}
+</script>
+</body>
+</html>

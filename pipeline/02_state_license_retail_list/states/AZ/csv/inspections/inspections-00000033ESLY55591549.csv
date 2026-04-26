@@ -1,0 +1,16 @@
+Facility_ID,Inspection_Num,Inspection_Date,Inspection_Type,Location_Type,Worksheet_Type,License_Number,Status
+001t000000L0T9BAAV,INSP-0132944,6/9/2025,Compliance (Annual),Retail Site,Establishment,00000033ESLY55591549,Complete
+001t000000L0T9BAAV,INSP-0132945,6/9/2025,Compliance (Annual),Retail Site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0097846,2/27/2025,Modification,Cultivation Off-site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0052580,1/30/2025,Complaint,Retail Site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0052579,1/30/2025,Complaint,Retail Site,Establishment,00000033ESLY55591549,Complete
+001t000000L0T9BAAV,INSP-0045001,6/13/2024,Compliance (Annual),Retail Site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0045000,6/13/2024,Compliance (Annual),Retail Site,Establishment,00000033ESLY55591549,Complete
+001t000000L0T9BAAV,INSP-0044416,5/28/2024,Compliance (Annual),Cultivation Off-site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0037344,1/30/2024,Complaint,Retail Site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0035840,12/20/2023,Compliance (Annual),Cultivation Site,Establishment,00000033ESLY55591549,Complete
+001t000000L0T9BAAV,INSP-0030855,8/9/2023,Modification,Cultivation Site,Establishment,00000033ESLY55591549,Complete
+001t000000L0T9BAAV,INSP-0029668,7/14/2023,Compliance (Annual),Retail Site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0029667,7/14/2023,Compliance (Annual),Retail Site,Establishment,00000033ESLY55591549,Complete
+001t000000L0T9BAAV,INSP-0028324,6/12/2023,Compliance (Annual),Cultivation Off-site,Dispensary,00000011DCMZ00182361,Complete
+001t000000L0T9BAAV,INSP-0027299,5/12/2023,Complaint,Cultivation Off-site,Dispensary,00000011DCMZ00182361,Complete

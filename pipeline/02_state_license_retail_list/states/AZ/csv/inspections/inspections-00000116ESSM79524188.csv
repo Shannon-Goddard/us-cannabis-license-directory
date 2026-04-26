@@ -1,0 +1,12 @@
+Facility_ID,Inspection_Num,Inspection_Date,Inspection_Type,Location_Type,Worksheet_Type,License_Number,Status
+001t000000L0TAXAA3,INSP-0170697,3/24/2026,Modification,Retail Site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0164569,12/15/2025,Compliance (Annual),Retail Site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0164568,12/15/2025,Compliance (Annual),Retail Site,Establishment,00000116ESSM79524188,Complete
+001t000000L0TAXAA3,INSP-0051285,1/6/2025,Compliance (Annual),Retail Site,Establishment,00000116ESSM79524188,Complete
+001t000000L0TAXAA3,INSP-0051286,1/6/2025,Compliance (Annual),Retail Site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0043596,6/25/2024,Compliance (Annual),Cultivation Off-site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0044307,5/23/2024,Complaint,Cultivation Off-site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0043476,5/2/2024,Complaint,Cultivation Off-site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0036340,2/8/2024,Compliance (Annual),Retail Site,Dispensary,00000075DCPP00704676,Complete
+001t000000L0TAXAA3,INSP-0036339,2/8/2024,Compliance (Annual),Retail Site,Establishment,00000116ESSM79524188,Complete
+001t000000L0TAXAA3,INSP-0028906,7/6/2023,Compliance (Annual),Cultivation Off-site,Dispensary,00000075DCPP00704676,Complete

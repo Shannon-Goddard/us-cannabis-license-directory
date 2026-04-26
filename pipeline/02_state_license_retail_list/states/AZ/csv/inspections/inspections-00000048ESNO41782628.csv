@@ -1,0 +1,15 @@
+Facility_ID,Inspection_Num,Inspection_Date,Inspection_Type,Location_Type,Worksheet_Type,License_Number,Status
+001t000000L0TAtAAN,INSP-0137791,7/31/2025,Compliance (Initial),Dispensary,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0134935,6/26/2025,Modification,Retail Site,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0134934,6/26/2025,Modification,Retail Site,Establishment,00000048ESNO41782628,Complete
+001t000000L0TAtAAN,INSP-0124575,4/28/2025,Compliance (Annual),Retail Site,Establishment,00000048ESNO41782628,Complete
+001t000000L0TAtAAN,INSP-0124578,4/28/2025,Compliance (Annual),Retail Site,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0097268,2/21/2025,Modification,Retail Site,Establishment,00000048ESNO41782628,Complete
+001t000000L0TAtAAN,INSP-0097269,2/21/2025,Modification,Retail Site,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0049097,10/15/2024,Complaint,Retail Site,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0043971,5/14/2024,Compliance (Annual),Retail Site,Establishment,00000048ESNO41782628,Complete
+001t000000L0TAtAAN,INSP-0043972,5/14/2024,Compliance (Annual),Retail Site,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0037608,2/14/2024,Modification,Retail Site,Dispensary,00000118DCKD00426097,Complete
+001t000000L0TAtAAN,INSP-0037607,2/14/2024,Modification,Retail Site,Establishment,00000048ESNO41782628,Complete
+001t000000L0TAtAAN,INSP-0028275,6/7/2023,Compliance (Annual),Retail Site,Establishment,00000048ESNO41782628,Complete
+001t000000L0TAtAAN,INSP-0028276,6/7/2023,Compliance (Annual),Retail Site,Dispensary,00000118DCKD00426097,Complete

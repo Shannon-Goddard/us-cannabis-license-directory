@@ -1,0 +1,23 @@
+Facility_ID,Inspection_Num,Inspection_Date,Inspection_Type,Location_Type,Worksheet_Type,License_Number,Status
+001t000000L0T9iAAF,INSP-0166864,3/3/2026,Compliance (Annual),Retail Site,Establishment,00000113ESLZ23317951,SOD
+001t000000L0T9iAAF,INSP-0166865,3/3/2026,Compliance (Annual),Retail Site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0164567,12/10/2025,Compliance (Annual),Cultivation Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0158919,9/16/2025,Compliance (Annual),Cultivation Off-site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0136347,8/14/2025,Monitoring,Cultivation Off-site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0115558,4/1/2025,Complaint;Compliance (Annual),Retail Site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0115557,4/1/2025,Complaint;Compliance (Annual),Retail Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0052469,1/28/2025,Compliance (Annual),Cultivation Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0048735,10/4/2024,Compliance (Annual),Cultivation Off-site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0047758,9/3/2024,Monitoring,Cultivation Off-site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0042562,4/8/2024,Complaint,Cultivation Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0042559,4/8/2024,Compliance (Annual),Retail Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0042560,4/8/2024,Compliance (Annual),Retail Site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0039859,3/5/2024,Monitoring,Retail Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0039860,3/5/2024,Monitoring,Retail Site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0037520,2/2/2024,Compliance (Annual),Cultivation Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0035978,12/22/2023,Monitoring,Cultivation Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0033300,10/5/2023,Compliance (Annual),Cultivation Off-site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0029472,7/10/2023,Complaint,Retail Site,Establishment,00000113ESLZ23317951,Complete
+001t000000L0T9iAAF,INSP-0029473,7/10/2023,Complaint,Retail Site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0026446,4/24/2023,Compliance (Annual),Retail Site,Dispensary,00000017DCEX00412883,Complete
+001t000000L0T9iAAF,INSP-0026445,4/24/2023,Compliance (Annual),Retail Site,Establishment,00000113ESLZ23317951,Complete

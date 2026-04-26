@@ -1,0 +1,1055 @@
+Month,County,Count
+2020-3,Cache,17
+2020-3,Davis,91
+2020-3,Salt Lake,396
+2020-3,Tooele,18
+2020-3,Utah,86
+2020-3,Weber,72
+2020-4,Box Elder,22
+2020-4,Cache,45
+2020-4,Davis,75
+2020-4,Salt Lake,323
+2020-4,Tooele,23
+2020-4,Utah,97
+2020-4,Weber,87
+2020-5,Cache,30
+2020-5,Davis,49
+2020-5,Salt Lake,218
+2020-5,Utah,72
+2020-5,Weber,22
+2020-6,Box Elder,38
+2020-6,Cache,76
+2020-6,Davis,108
+2020-6,Salt Lake,286
+2020-6,Utah,93
+2020-6,Weber,138
+2020-7,Box Elder,55
+2020-7,Cache,129
+2020-7,Davis,184
+2020-7,Salt Lake,348
+2020-7,Utah,122
+2020-7,Weber,264
+2020-8,Box Elder,41
+2020-8,Cache,88
+2020-8,Carbon,14
+2020-8,Davis,195
+2020-8,Salt Lake,487
+2020-8,Summit,17
+2020-8,Tooele,29
+2020-8,Utah,169
+2020-8,Weber,225
+2020-9,Box Elder,43
+2020-9,Cache,68
+2020-9,Carbon,16
+2020-9,Davis,250
+2020-9,Salt Lake,585
+2020-9,Sanpete,12
+2020-9,Summit,14
+2020-9,Tooele,34
+2020-9,Utah,422
+2020-9,Wasatch,14
+2020-9,Weber,251
+2020-10,Box Elder,49
+2020-10,Cache,94
+2020-10,Carbon,14
+2020-10,Davis,284
+2020-10,Other,19
+2020-10,Salt Lake,990
+2020-10,Sanpete,14
+2020-10,Summit,36
+2020-10,Tooele,47
+2020-10,Utah,409
+2020-10,Wasatch,22
+2020-10,Washington,21
+2020-10,Weber,267
+2020-11,Box Elder,39
+2020-11,Cache,98
+2020-11,Carbon,23
+2020-11,Davis,220
+2020-11,Duchesne,13
+2020-11,Other,18
+2020-11,Salt Lake,1013
+2020-11,Summit,32
+2020-11,Tooele,47
+2020-11,Utah,364
+2020-11,Wasatch,22
+2020-11,Washington,19
+2020-11,Weber,248
+2020-12,Box Elder,39
+2020-12,Cache,100
+2020-12,Carbon,12
+2020-12,Davis,259
+2020-12,Juab,13
+2020-12,Salt Lake,920
+2020-12,Sanpete,12
+2020-12,Summit,37
+2020-12,Tooele,41
+2020-12,Utah,369
+2020-12,Wasatch,18
+2020-12,Washington,21
+2020-12,Weber,273
+2021-1,Box Elder,80
+2021-1,Cache,154
+2021-1,Carbon,12
+2021-1,Davis,470
+2021-1,Duchesne,12
+2021-1,Juab,12
+2021-1,Other,122
+2021-1,Salt Lake,1676
+2021-1,Sanpete,19
+2021-1,Sevier,15
+2021-1,Summit,55
+2021-1,Tooele,79
+2021-1,Utah,676
+2021-1,Wasatch,24
+2021-1,Washington,25
+2021-1,Weber,457
+2021-2,Box Elder,51
+2021-2,Cache,136
+2021-2,Davis,356
+2021-2,Other,38
+2021-2,Salt Lake,1218
+2021-2,Sanpete,13
+2021-2,Summit,58
+2021-2,Tooele,58
+2021-2,Uintah,25
+2021-2,Utah,537
+2021-2,Wasatch,29
+2021-2,Washington,25
+2021-2,Weber,334
+2021-3,Box Elder,92
+2021-3,Cache,170
+2021-3,Carbon,23
+2021-3,Davis,368
+2021-3,Millard,12
+2021-3,Other,17
+2021-3,Salt Lake,1415
+2021-3,Sanpete,20
+2021-3,Sevier,14
+2021-3,Summit,71
+2021-3,Tooele,57
+2021-3,Uintah,19
+2021-3,Utah,661
+2021-3,Wasatch,38
+2021-3,Washington,36
+2021-3,Weber,399
+2021-4,Box Elder,57
+2021-4,Cache,158
+2021-4,Carbon,25
+2021-4,Davis,364
+2021-4,Other,13
+2021-4,Salt Lake,1295
+2021-4,Sanpete,17
+2021-4,Summit,64
+2021-4,Tooele,66
+2021-4,Uintah,19
+2021-4,Utah,559
+2021-4,Wasatch,33
+2021-4,Washington,51
+2021-4,Weber,393
+2021-5,Box Elder,72
+2021-5,Cache,109
+2021-5,Davis,325
+2021-5,Iron,12
+2021-5,Other,14
+2021-5,Salt Lake,1115
+2021-5,Sanpete,24
+2021-5,Summit,65
+2021-5,Tooele,59
+2021-5,Uintah,19
+2021-5,Utah,561
+2021-5,Wasatch,29
+2021-5,Washington,49
+2021-5,Weber,317
+2021-6,Box Elder,57
+2021-6,Cache,134
+2021-6,Carbon,22
+2021-6,Davis,294
+2021-6,Iron,135
+2021-6,Other,43
+2021-6,Salt Lake,1080
+2021-6,Sanpete,12
+2021-6,Sevier,14
+2021-6,Summit,48
+2021-6,Tooele,37
+2021-6,Utah,534
+2021-6,Wasatch,23
+2021-6,Washington,326
+2021-6,Weber,287
+2021-7,Box Elder,59
+2021-7,Cache,116
+2021-7,Carbon,20
+2021-7,Davis,323
+2021-7,Iron,81
+2021-7,Other,49
+2021-7,Salt Lake,1102
+2021-7,Sanpete,21
+2021-7,Summit,62
+2021-7,Tooele,48
+2021-7,Uintah,16
+2021-7,Utah,512
+2021-7,Wasatch,33
+2021-7,Washington,237
+2021-7,Weber,295
+2021-8,Box Elder,58
+2021-8,Cache,99
+2021-8,Carbon,32
+2021-8,Davis,291
+2021-8,Duchesne,13
+2021-8,Iron,95
+2021-8,Juab,13
+2021-8,Other,64
+2021-8,Salt Lake,1111
+2021-8,Sanpete,22
+2021-8,Summit,37
+2021-8,Tooele,63
+2021-8,Uintah,12
+2021-8,Utah,587
+2021-8,Wasatch,24
+2021-8,Washington,200
+2021-8,Weber,290
+2021-9,Box Elder,63
+2021-9,Cache,115
+2021-9,Carbon,22
+2021-9,Davis,293
+2021-9,Iron,93
+2021-9,Other,46
+2021-9,Salt Lake,1077
+2021-9,Sanpete,13
+2021-9,Summit,55
+2021-9,Tooele,59
+2021-9,Uintah,15
+2021-9,Utah,506
+2021-9,Wasatch,29
+2021-9,Washington,154
+2021-9,Weber,267
+2021-10,Box Elder,62
+2021-10,Cache,110
+2021-10,Carbon,26
+2021-10,Davis,295
+2021-10,Iron,81
+2021-10,Other,47
+2021-10,Salt Lake,1151
+2021-10,Sanpete,25
+2021-10,Summit,45
+2021-10,Tooele,71
+2021-10,Utah,491
+2021-10,Wasatch,24
+2021-10,Washington,154
+2021-10,Weber,267
+2021-11,Box Elder,72
+2021-11,Cache,113
+2021-11,Carbon,19
+2021-11,Davis,301
+2021-11,Iron,69
+2021-11,Other,31
+2021-11,Salt Lake,1030
+2021-11,Sanpete,22
+2021-11,Summit,60
+2021-11,Tooele,54
+2021-11,Utah,515
+2021-11,Wasatch,20
+2021-11,Washington,163
+2021-11,Weber,299
+2021-12,Box Elder,49
+2021-12,Cache,115
+2021-12,Carbon,21
+2021-12,Davis,262
+2021-12,Iron,52
+2021-12,Other,46
+2021-12,Salt Lake,889
+2021-12,Sanpete,15
+2021-12,Summit,50
+2021-12,Tooele,42
+2021-12,Utah,419
+2021-12,Wasatch,26
+2021-12,Washington,129
+2021-12,Weber,221
+2022-1,Box Elder,53
+2022-1,Cache,85
+2022-1,Carbon,22
+2022-1,Davis,245
+2022-1,Emery,12
+2022-1,Iron,68
+2022-1,Other,61
+2022-1,Salt Lake,975
+2022-1,Sanpete,21
+2022-1,Summit,55
+2022-1,Tooele,44
+2022-1,Utah,441
+2022-1,Wasatch,34
+2022-1,Washington,126
+2022-1,Weber,229
+2022-2,Box Elder,45
+2022-2,Cache,91
+2022-2,Carbon,14
+2022-2,Davis,281
+2022-2,Duchesne,13
+2022-2,Iron,45
+2022-2,Other,71
+2022-2,Salt Lake,916
+2022-2,Sanpete,18
+2022-2,Summit,30
+2022-2,Tooele,48
+2022-2,Utah,447
+2022-2,Wasatch,35
+2022-2,Washington,130
+2022-2,Weber,305
+2022-3,Box Elder,78
+2022-3,Cache,123
+2022-3,Carbon,27
+2022-3,Davis,323
+2022-3,Iron,93
+2022-3,Millard,15
+2022-3,Other,72
+2022-3,Salt Lake,1157
+2022-3,Sanpete,17
+2022-3,Sevier,13
+2022-3,Summit,57
+2022-3,Tooele,69
+2022-3,Uintah,15
+2022-3,Utah,511
+2022-3,Wasatch,34
+2022-3,Washington,150
+2022-3,Weber,344
+2022-4,Box Elder,69
+2022-4,Cache,123
+2022-4,Carbon,20
+2022-4,Davis,281
+2022-4,Iron,59
+2022-4,Other,46
+2022-4,Salt Lake,1118
+2022-4,Sanpete,15
+2022-4,Sevier,15
+2022-4,Summit,46
+2022-4,Tooele,73
+2022-4,Utah,505
+2022-4,Wasatch,31
+2022-4,Washington,158
+2022-4,Weber,312
+2022-5,Box Elder,73
+2022-5,Cache,124
+2022-5,Carbon,27
+2022-5,Davis,314
+2022-5,Iron,52
+2022-5,Other,38
+2022-5,Salt Lake,1085
+2022-5,Sanpete,18
+2022-5,Summit,43
+2022-5,Tooele,62
+2022-5,Utah,503
+2022-5,Wasatch,26
+2022-5,Washington,157
+2022-5,Weber,317
+2022-6,Box Elder,51
+2022-6,Cache,110
+2022-6,Carbon,18
+2022-6,Davis,291
+2022-6,Iron,51
+2022-6,Other,66
+2022-6,Salt Lake,1070
+2022-6,Sanpete,16
+2022-6,Summit,51
+2022-6,Tooele,47
+2022-6,Uintah,14
+2022-6,Utah,445
+2022-6,Wasatch,20
+2022-6,Washington,127
+2022-6,Weber,247
+2022-7,Box Elder,66
+2022-7,Cache,106
+2022-7,Carbon,23
+2022-7,Davis,283
+2022-7,Iron,45
+2022-7,Other,62
+2022-7,Salt Lake,1010
+2022-7,Sanpete,15
+2022-7,Summit,40
+2022-7,Tooele,45
+2022-7,Uintah,12
+2022-7,Utah,480
+2022-7,Wasatch,23
+2022-7,Washington,105
+2022-7,Weber,229
+2022-8,Box Elder,76
+2022-8,Cache,112
+2022-8,Carbon,18
+2022-8,Davis,316
+2022-8,Duchesne,13
+2022-8,Iron,69
+2022-8,Morgan,18
+2022-8,Other,88
+2022-8,Salt Lake,1195
+2022-8,Sanpete,15
+2022-8,Summit,57
+2022-8,Tooele,61
+2022-8,Uintah,18
+2022-8,Utah,546
+2022-8,Wasatch,33
+2022-8,Washington,124
+2022-8,Weber,295
+2022-9,Box Elder,58
+2022-9,Cache,123
+2022-9,Carbon,40
+2022-9,Davis,349
+2022-9,Emery,12
+2022-9,Iron,52
+2022-9,Other,98
+2022-9,Salt Lake,1123
+2022-9,Sanpete,20
+2022-9,Sevier,12
+2022-9,Summit,55
+2022-9,Tooele,50
+2022-9,Utah,464
+2022-9,Wasatch,34
+2022-9,Washington,111
+2022-9,Weber,312
+2022-10,Box Elder,69
+2022-10,Cache,132
+2022-10,Carbon,17
+2022-10,Davis,305
+2022-10,Iron,41
+2022-10,Other,71
+2022-10,Salt Lake,1109
+2022-10,Sanpete,18
+2022-10,Summit,42
+2022-10,Tooele,59
+2022-10,Utah,498
+2022-10,Wasatch,27
+2022-10,Washington,124
+2022-10,Weber,294
+2022-11,Box Elder,60
+2022-11,Cache,83
+2022-11,Carbon,20
+2022-11,Davis,299
+2022-11,Iron,29
+2022-11,Juab,16
+2022-11,Other,48
+2022-11,Salt Lake,979
+2022-11,Sanpete,24
+2022-11,Summit,47
+2022-11,Tooele,57
+2022-11,Utah,479
+2022-11,Wasatch,31
+2022-11,Washington,112
+2022-11,Weber,252
+2022-12,Box Elder,49
+2022-12,Cache,89
+2022-12,Carbon,45
+2022-12,Davis,264
+2022-12,Emery,20
+2022-12,Iron,27
+2022-12,Other,87
+2022-12,Salt Lake,1017
+2022-12,Sanpete,17
+2022-12,Summit,48
+2022-12,Tooele,48
+2022-12,Uintah,22
+2022-12,Utah,435
+2022-12,Wasatch,26
+2022-12,Washington,131
+2022-12,Weber,256
+2023-1,Box Elder,51
+2023-1,Cache,108
+2023-1,Carbon,69
+2023-1,Davis,285
+2023-1,Iron,34
+2023-1,Other,83
+2023-1,Salt Lake,995
+2023-1,Sanpete,18
+2023-1,Sevier,12
+2023-1,Summit,46
+2023-1,Tooele,49
+2023-1,Utah,449
+2023-1,Wasatch,30
+2023-1,Washington,133
+2023-1,Weber,276
+2023-2,Box Elder,40
+2023-2,Cache,117
+2023-2,Carbon,35
+2023-2,Davis,332
+2023-2,Emery,15
+2023-2,Iron,31
+2023-2,Juab,17
+2023-2,Other,94
+2023-2,Salt Lake,1170
+2023-2,Sanpete,25
+2023-2,Summit,32
+2023-2,Tooele,52
+2023-2,Utah,449
+2023-2,Wasatch,25
+2023-2,Washington,125
+2023-2,Weber,288
+2023-3,Box Elder,62
+2023-3,Cache,128
+2023-3,Carbon,46
+2023-3,Davis,320
+2023-3,Duchesne,12
+2023-3,Emery,17
+2023-3,Iron,58
+2023-3,Other,85
+2023-3,Salt Lake,1195
+2023-3,Sanpete,28
+2023-3,Summit,49
+2023-3,Tooele,48
+2023-3,Uintah,13
+2023-3,Utah,524
+2023-3,Wasatch,34
+2023-3,Washington,166
+2023-3,Weber,285
+2023-4,Box Elder,52
+2023-4,Cache,123
+2023-4,Carbon,45
+2023-4,Davis,351
+2023-4,Duchesne,13
+2023-4,Emery,20
+2023-4,Iron,48
+2023-4,Other,61
+2023-4,Salt Lake,1250
+2023-4,Sanpete,25
+2023-4,Sevier,13
+2023-4,Summit,52
+2023-4,Tooele,61
+2023-4,Uintah,16
+2023-4,Utah,453
+2023-4,Wasatch,25
+2023-4,Washington,130
+2023-4,Weber,310
+2023-5,Box Elder,55
+2023-5,Cache,100
+2023-5,Carbon,34
+2023-5,Davis,313
+2023-5,Duchesne,15
+2023-5,Iron,37
+2023-5,Other,54
+2023-5,Salt Lake,1081
+2023-5,Sanpete,15
+2023-5,Sevier,12
+2023-5,Summit,51
+2023-5,Tooele,47
+2023-5,Utah,429
+2023-5,Wasatch,25
+2023-5,Washington,126
+2023-5,Weber,240
+2023-6,Box Elder,53
+2023-6,Cache,103
+2023-6,Carbon,41
+2023-6,Davis,311
+2023-6,Iron,47
+2023-6,Other,71
+2023-6,Salt Lake,1090
+2023-6,Sanpete,14
+2023-6,Sevier,12
+2023-6,Summit,38
+2023-6,Tooele,45
+2023-6,Utah,408
+2023-6,Wasatch,25
+2023-6,Washington,113
+2023-6,Weber,258
+2023-7,Box Elder,57
+2023-7,Cache,82
+2023-7,Carbon,27
+2023-7,Davis,263
+2023-7,Emery,13
+2023-7,Iron,38
+2023-7,Other,60
+2023-7,Salt Lake,1024
+2023-7,Sanpete,17
+2023-7,Summit,31
+2023-7,Tooele,35
+2023-7,Utah,344
+2023-7,Wasatch,20
+2023-7,Washington,119
+2023-7,Weber,273
+2023-8,Box Elder,62
+2023-8,Cache,96
+2023-8,Carbon,61
+2023-8,Davis,344
+2023-8,Duchesne,15
+2023-8,Emery,16
+2023-8,Iron,52
+2023-8,Other,48
+2023-8,Salt Lake,1077
+2023-8,Sanpete,18
+2023-8,Summit,43
+2023-8,Tooele,50
+2023-8,Utah,395
+2023-8,Wasatch,19
+2023-8,Washington,122
+2023-8,Weber,277
+2023-9,Box Elder,45
+2023-9,Cache,82
+2023-9,Carbon,35
+2023-9,Davis,243
+2023-9,Duchesne,15
+2023-9,Iron,42
+2023-9,Other,55
+2023-9,Salt Lake,917
+2023-9,Sanpete,17
+2023-9,Summit,39
+2023-9,Tooele,62
+2023-9,Uintah,14
+2023-9,Utah,403
+2023-9,Wasatch,25
+2023-9,Washington,114
+2023-9,Weber,269
+2023-10,Box Elder,49
+2023-10,Cache,93
+2023-10,Carbon,28
+2023-10,Davis,274
+2023-10,Duchesne,15
+2023-10,Iron,37
+2023-10,Other,51
+2023-10,Salt Lake,1057
+2023-10,Sanpete,17
+2023-10,Summit,31
+2023-10,Tooele,69
+2023-10,Utah,404
+2023-10,Wasatch,16
+2023-10,Washington,129
+2023-10,Weber,281
+2023-11,Box Elder,59
+2023-11,Cache,80
+2023-11,Carbon,25
+2023-11,Davis,249
+2023-11,Iron,43
+2023-11,Other,38
+2023-11,Salt Lake,958
+2023-11,Sanpete,21
+2023-11,Summit,36
+2023-11,Tooele,59
+2023-11,Utah,357
+2023-11,Wasatch,18
+2023-11,Washington,122
+2023-11,Weber,245
+2023-12,Box Elder,46
+2023-12,Cache,72
+2023-12,Carbon,39
+2023-12,Davis,264
+2023-12,Iron,44
+2023-12,Juab,13
+2023-12,Other,63
+2023-12,Salt Lake,919
+2023-12,Sanpete,17
+2023-12,Summit,37
+2023-12,Tooele,40
+2023-12,Uintah,14
+2023-12,Utah,351
+2023-12,Wasatch,21
+2023-12,Washington,128
+2023-12,Weber,191
+2024-1,Box Elder,44
+2024-1,Cache,87
+2024-1,Carbon,29
+2024-1,Davis,234
+2024-1,Iron,51
+2024-1,Other,51
+2024-1,Salt Lake,1019
+2024-1,Summit,25
+2024-1,Tooele,52
+2024-1,Uintah,15
+2024-1,Utah,378
+2024-1,Wasatch,19
+2024-1,Washington,150
+2024-1,Weber,225
+2024-2,Box Elder,37
+2024-2,Cache,87
+2024-2,Carbon,24
+2024-2,Davis,265
+2024-2,Iron,45
+2024-2,Other,75
+2024-2,Salt Lake,952
+2024-2,Sanpete,16
+2024-2,Sevier,14
+2024-2,Summit,33
+2024-2,Tooele,60
+2024-2,Utah,400
+2024-2,Wasatch,16
+2024-2,Washington,130
+2024-2,Weber,254
+2024-3,Box Elder,46
+2024-3,Cache,92
+2024-3,Carbon,38
+2024-3,Davis,273
+2024-3,Emery,13
+2024-3,Iron,78
+2024-3,Other,59
+2024-3,Salt Lake,1029
+2024-3,Sanpete,17
+2024-3,Summit,26
+2024-3,Tooele,58
+2024-3,Utah,357
+2024-3,Wasatch,18
+2024-3,Washington,173
+2024-3,Weber,290
+2024-4,Box Elder,51
+2024-4,Cache,94
+2024-4,Carbon,36
+2024-4,Davis,358
+2024-4,Iron,82
+2024-4,Other,38
+2024-4,Salt Lake,1176
+2024-4,Summit,45
+2024-4,Tooele,61
+2024-4,Utah,415
+2024-4,Wasatch,28
+2024-4,Washington,171
+2024-4,Weber,344
+2024-5,Box Elder,40
+2024-5,Cache,81
+2024-5,Carbon,43
+2024-5,Davis,272
+2024-5,Duchesne,16
+2024-5,Emery,17
+2024-5,Iron,53
+2024-5,Other,58
+2024-5,Salt Lake,1015
+2024-5,Sanpete,14
+2024-5,Summit,45
+2024-5,Tooele,56
+2024-5,Uintah,17
+2024-5,Utah,447
+2024-5,Wasatch,25
+2024-5,Washington,182
+2024-5,Weber,262
+2024-6,Box Elder,50
+2024-6,Cache,83
+2024-6,Carbon,23
+2024-6,Davis,263
+2024-6,Iron,67
+2024-6,Other,47
+2024-6,Salt Lake,1009
+2024-6,Summit,41
+2024-6,Tooele,47
+2024-6,Uintah,14
+2024-6,Utah,325
+2024-6,Wasatch,22
+2024-6,Washington,159
+2024-6,Weber,231
+2024-7,Box Elder,33
+2024-7,Cache,81
+2024-7,Carbon,26
+2024-7,Davis,274
+2024-7,Iron,49
+2024-7,Other,53
+2024-7,Salt Lake,964
+2024-7,Sanpete,13
+2024-7,Summit,26
+2024-7,Tooele,48
+2024-7,Utah,353
+2024-7,Wasatch,20
+2024-7,Washington,165
+2024-7,Weber,215
+2024-8,Box Elder,77
+2024-8,Cache,91
+2024-8,Carbon,27
+2024-8,Davis,326
+2024-8,Iron,90
+2024-8,Other,65
+2024-8,Salt Lake,1094
+2024-8,Summit,30
+2024-8,Tooele,65
+2024-8,Uintah,16
+2024-8,Utah,401
+2024-8,Wasatch,22
+2024-8,Washington,164
+2024-8,Weber,318
+2024-9,Box Elder,49
+2024-9,Cache,90
+2024-9,Carbon,22
+2024-9,Davis,246
+2024-9,Duchesne,13
+2024-9,Iron,59
+2024-9,Other,53
+2024-9,Salt Lake,980
+2024-9,Sanpete,19
+2024-9,Summit,42
+2024-9,Tooele,42
+2024-9,Utah,392
+2024-9,Wasatch,30
+2024-9,Washington,153
+2024-9,Weber,231
+2024-10,Box Elder,54
+2024-10,Cache,104
+2024-10,Carbon,33
+2024-10,Davis,344
+2024-10,Duchesne,13
+2024-10,Iron,63
+2024-10,Juab,14
+2024-10,Other,57
+2024-10,Salt Lake,1166
+2024-10,Sevier,18
+2024-10,Summit,31
+2024-10,Tooele,53
+2024-10,Utah,460
+2024-10,Wasatch,24
+2024-10,Washington,184
+2024-10,Weber,292
+2024-11,Box Elder,44
+2024-11,Cache,84
+2024-11,Carbon,23
+2024-11,Davis,295
+2024-11,Iron,69
+2024-11,Other,32
+2024-11,Salt Lake,1105
+2024-11,Sanpete,18
+2024-11,Sevier,16
+2024-11,Summit,42
+2024-11,Tooele,46
+2024-11,Utah,425
+2024-11,Wasatch,18
+2024-11,Washington,185
+2024-11,Weber,282
+2024-12,Box Elder,48
+2024-12,Cache,75
+2024-12,Carbon,21
+2024-12,Davis,259
+2024-12,Duchesne,14
+2024-12,Iron,39
+2024-12,Other,55
+2024-12,Salt Lake,846
+2024-12,Summit,32
+2024-12,Tooele,45
+2024-12,Utah,360
+2024-12,Wasatch,23
+2024-12,Washington,159
+2024-12,Weber,249
+2025-1,Box Elder,47
+2025-1,Cache,90
+2025-1,Carbon,28
+2025-1,Davis,306
+2025-1,Iron,50
+2025-1,Other,68
+2025-1,Salt Lake,1026
+2025-1,Sanpete,20
+2025-1,Sevier,12
+2025-1,Summit,48
+2025-1,Tooele,46
+2025-1,Uintah,16
+2025-1,Utah,414
+2025-1,Wasatch,15
+2025-1,Washington,161
+2025-1,Weber,286
+2025-2,Box Elder,71
+2025-2,Cache,86
+2025-2,Carbon,23
+2025-2,Davis,302
+2025-2,Iron,53
+2025-2,Other,61
+2025-2,Salt Lake,1054
+2025-2,Sanpete,15
+2025-2,Sevier,12
+2025-2,Summit,43
+2025-2,Tooele,52
+2025-2,Utah,391
+2025-2,Wasatch,23
+2025-2,Washington,156
+2025-2,Weber,267
+2025-3,Box Elder,74
+2025-3,Cache,73
+2025-3,Carbon,35
+2025-3,Davis,329
+2025-3,Iron,63
+2025-3,Juab,16
+2025-3,Kane,13
+2025-3,Other,79
+2025-3,Salt Lake,1146
+2025-3,Sanpete,16
+2025-3,Sevier,21
+2025-3,Summit,38
+2025-3,Tooele,57
+2025-3,Uintah,12
+2025-3,Utah,495
+2025-3,Wasatch,33
+2025-3,Washington,180
+2025-3,Weber,311
+2025-4,Box Elder,79
+2025-4,Cache,106
+2025-4,Carbon,21
+2025-4,Davis,370
+2025-4,Duchesne,12
+2025-4,Iron,63
+2025-4,Other,57
+2025-4,Salt Lake,1223
+2025-4,Sanpete,13
+2025-4,Sevier,19
+2025-4,Summit,26
+2025-4,Tooele,52
+2025-4,Uintah,14
+2025-4,Utah,465
+2025-4,Wasatch,14
+2025-4,Washington,192
+2025-4,Weber,312
+2025-5,Box Elder,85
+2025-5,Cache,77
+2025-5,Carbon,13
+2025-5,Davis,310
+2025-5,Iron,53
+2025-5,Other,63
+2025-5,Salt Lake,1133
+2025-5,Sanpete,12
+2025-5,Sevier,16
+2025-5,Summit,24
+2025-5,Tooele,59
+2025-5,Uintah,14
+2025-5,Utah,402
+2025-5,Wasatch,22
+2025-5,Washington,146
+2025-5,Weber,284
+2025-6,Box Elder,58
+2025-6,Cache,67
+2025-6,Carbon,15
+2025-6,Davis,291
+2025-6,Iron,57
+2025-6,Other,68
+2025-6,Salt Lake,984
+2025-6,Sanpete,14
+2025-6,Summit,31
+2025-6,Tooele,52
+2025-6,Uintah,13
+2025-6,Utah,369
+2025-6,Wasatch,21
+2025-6,Washington,156
+2025-6,Weber,283
+2025-7,Box Elder,44
+2025-7,Cache,79
+2025-7,Carbon,18
+2025-7,Davis,249
+2025-7,Duchesne,17
+2025-7,Iron,47
+2025-7,Other,61
+2025-7,Salt Lake,1193
+2025-7,Sanpete,20
+2025-7,Summit,34
+2025-7,Tooele,66
+2025-7,Uintah,15
+2025-7,Utah,375
+2025-7,Wasatch,24
+2025-7,Washington,175
+2025-7,Weber,266
+2025-8,Box Elder,38
+2025-8,Cache,74
+2025-8,Carbon,19
+2025-8,Davis,300
+2025-8,Duchesne,13
+2025-8,Iron,46
+2025-8,Juab,12
+2025-8,Other,56
+2025-8,Salt Lake,1221
+2025-8,Sanpete,16
+2025-8,Summit,33
+2025-8,Tooele,52
+2025-8,Uintah,19
+2025-8,Utah,423
+2025-8,Wasatch,26
+2025-8,Washington,163
+2025-8,Weber,273
+2025-9,Box Elder,44
+2025-9,Cache,73
+2025-9,Carbon,17
+2025-9,Davis,231
+2025-9,Duchesne,12
+2025-9,Iron,41
+2025-9,Other,53
+2025-9,Salt Lake,1062
+2025-9,Sevier,12
+2025-9,Summit,32
+2025-9,Tooele,51
+2025-9,Uintah,16
+2025-9,Utah,364
+2025-9,Wasatch,34
+2025-9,Washington,136
+2025-9,Weber,240
+2025-10,Box Elder,53
+2025-10,Cache,57
+2025-10,Carbon,25
+2025-10,Davis,268
+2025-10,Duchesne,12
+2025-10,Iron,52
+2025-10,Other,55
+2025-10,Salt Lake,1060
+2025-10,Sevier,15
+2025-10,Summit,31
+2025-10,Tooele,55
+2025-10,Uintah,12
+2025-10,Utah,371
+2025-10,Wasatch,36
+2025-10,Washington,147
+2025-10,Weber,277
+2025-11,Box Elder,48
+2025-11,Cache,59
+2025-11,Carbon,20
+2025-11,Davis,277
+2025-11,Duchesne,14
+2025-11,Iron,43
+2025-11,Other,50
+2025-11,Salt Lake,1349
+2025-11,Summit,36
+2025-11,Tooele,55
+2025-11,Uintah,14
+2025-11,Utah,400
+2025-11,Wasatch,25
+2025-11,Washington,133
+2025-11,Weber,292
+2025-12,Box Elder,56
+2025-12,Cache,65
+2025-12,Carbon,20
+2025-12,Davis,258
+2025-12,Iron,48
+2025-12,Other,60
+2025-12,Salt Lake,1180
+2025-12,Sanpete,16
+2025-12,Summit,40
+2025-12,Tooele,52
+2025-12,Uintah,14
+2025-12,Utah,376
+2025-12,Wasatch,26
+2025-12,Washington,127
+2025-12,Weber,246
+2026-1,Box Elder,56
+2026-1,Cache,77
+2026-1,Carbon,18
+2026-1,Davis,268
+2026-1,Duchesne,12
+2026-1,Iron,46
+2026-1,Other,61
+2026-1,Salt Lake,1052
+2026-1,Sanpete,14
+2026-1,Sevier,15
+2026-1,Summit,27
+2026-1,Tooele,58
+2026-1,Utah,392
+2026-1,Wasatch,19
+2026-1,Washington,153
+2026-1,Weber,245
+2026-2,Box Elder,49
+2026-2,Cache,74
+2026-2,Carbon,21
+2026-2,Davis,288
+2026-2,Duchesne,16
+2026-2,Iron,54
+2026-2,Other,66
+2026-2,Salt Lake,1249
+2026-2,Summit,46
+2026-2,Tooele,55
+2026-2,Uintah,18
+2026-2,Utah,382
+2026-2,Wasatch,30
+2026-2,Washington,138
+2026-2,Weber,304
+2026-3,Box Elder,69
+2026-3,Cache,97
+2026-3,Carbon,25
+2026-3,Davis,260
+2026-3,Duchesne,15
+2026-3,Iron,50
+2026-3,Other,75
+2026-3,Salt Lake,1280
+2026-3,Sevier,17
+2026-3,Summit,49
+2026-3,Tooele,70
+2026-3,Uintah,14
+2026-3,Utah,410
+2026-3,Wasatch,16
+2026-3,Washington,137
+2026-3,Weber,296

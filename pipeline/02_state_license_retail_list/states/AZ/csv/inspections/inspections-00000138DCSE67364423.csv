@@ -1,0 +1,7 @@
+Facility_ID,Inspection_Num,Inspection_Date,Inspection_Type,Location_Type,Worksheet_Type,License_Number,Status
+0018y000004jJBKAA2,INSP-0164047,12/5/2025,Complaint;Compliance (Annual),Retail Site,Establishment,0000172ESTFM12469613,Complete
+0018y000004jJBKAA2,INSP-0164048,12/5/2025,Complaint;Compliance (Annual),Retail Site,Dispensary,00000138DCSE67364423,Complete
+0018y000004jJBKAA2,INSP-0099687,2/28/2025,Initial Monitoring,Retail Site,Dispensary,00000138DCSE67364423,Complete
+0018y000004jJBKAA2,INSP-0099686,2/28/2025,Initial Monitoring,Retail Site,Establishment,0000172ESTFM12469613,Complete
+0018y000004jJBKAA2,INSP-0051747,1/3/2025,Compliance (Initial),Retail Site,Establishment,0000172ESTFM12469613,Complete
+0018y000004jJBKAA2,INSP-0051748,1/3/2025,Compliance (Initial),Dispensary,Dispensary,00000138DCSE67364423,Complete
