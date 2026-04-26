@@ -1,10 +1,16 @@
 # CI Seed Registry — Data Pipeline
 
-[![DOI](https://zenodo.org/badge/1221929074.svg)](https://doi.org/10.5281/zenodo.19800772)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19800772.svg)](https://doi.org/10.5281/zenodo.19800772)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Owner:** Shannon Goddard — Loyal9 LLC
 **Status:** Active
+
+---
+
+## Purpose
+
+This registry provides a unified, structured view of the US cannabis and hemp licensing landscape. By consolidating fragmented state-level portals and USDA data, it supports compliance research and market analysis necessitated by evolving federal agricultural policies.
 
 ---
 
@@ -49,6 +55,34 @@ See `SOURCE.md` for full column reference, methodology, known limitations, and c
 
 ---
 
+## Getting Started
+
+You can use the data immediately via the `raw.csv` / `raw.json` files, or explore the `pdf-to-csv.html` tool for manual processing of new state records.
+
+To run the Python scripts in the `pipeline/` directory:
+
+```bash
+git clone https://github.com/Shannon-Goddard/us-cannabis-license-directory.git
+```
+
+Each subdirectory contains specific scripts for data fetching and cleaning.
+
+---
+
+## Data Maintenance
+
+- **Last Full Sync:** April 2026
+- **Update Frequency:** Data will not be updated in this repo.
+- **Verification:** Verified records are cross-referenced via `04_human_in_the_loop`.
+
+---
+
+## Contributing
+
+Contributions will be welcomed on the map repo where the data will be used. Link will be dropped here when available.
+
+---
+
 ## DOI
 
 `DOI: 10.5281/zenodo.19800772`
@@ -73,3 +107,9 @@ This project is licensed under the [MIT License](LICENSE).
 **Amazon Q** (AWS AI Assistant) — Scripts, pipeline architecture, data processing, documentation.
 
 Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database/breeder).
+
+---
+
+[GitHub ❤️ Sponsor](https://github.com/sponsors/Shannon-Goddard)
+
+Built with grit in Riverside, CA. Chaos Preferred. Integrity Required.
