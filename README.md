@@ -25,7 +25,7 @@ NEW-SEEDS-LAW/
 │   ├── 04_human_in_the_loop/         # Manual review, dedup, cross-reference matching
 │   ├── 05_seed_breeders/             # Breeder master + CA registered seed sellers
 │   └── pdf-to-csv.html              # In-browser PDF-to-CSV converter (client-side, no install)
-├── raw.csv                            # Published dataset — 13,119 US cannabis/hemp businesses
+├── raw.csv                            # Published dataset — 13,128 US cannabis/hemp businesses
 ├── raw.json                           # Same dataset in JSON format
 ├── SOURCE.md                          # Data dictionary, methodology, citation info for DOI
 └── README.md                          # This file
@@ -39,14 +39,14 @@ Each pipeline folder has its own README with source details, scripts, and output
 
 📥 [Download raw.csv](raw.csv) · 📥 [Download raw.json](raw.json)
 
-The published dataset. 13,119 records across 27 US states. 22 columns. Available in CSV and JSON formats.
+The published dataset. 13,128 records across 35 US states. 21 columns. Available in CSV and JSON formats.
 
 | Type | Count |
 |---|---|
 | Dispensary | 5,678 |
 | Cultivator | 5,001 |
 | Other | 3,049 |
-| Breeder | 136 |
+| Breeder | 145 |
 | Bank | 18 |
 
 Top states: CA (7,743), CO (1,390), MI (857), NY (801), OR (468)

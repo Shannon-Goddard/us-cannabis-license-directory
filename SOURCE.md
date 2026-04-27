@@ -2,7 +2,7 @@
 
 **Version:** 1.0
 **File:** `raw.csv`
-**Records:** 13,119
+**Records:** 13,128
 **Country:** United States
 **License:** CC BY 4.0
 
@@ -30,13 +30,13 @@ This dataset is intended as a free, open, community-maintained data utility for 
 
 | Metric | Count |
 |---|---|
-| Total records | 13,119 |
-| States represented | 27 |
-| Has street address | 6,237 (47.5%) |
+| Total records | 13,128 |
+| States represented | 35 |
+| Has street address | 6,246 (47.6%) |
 | Has geocoordinates | 6,495 (49.5%) |
-| Has phone | 9,234 (70.4%) |
-| Has email | 8,097 (61.7%) |
-| Has website URL | 483 (3.7%) |
+| Has phone | 9,241 (70.4%) |
+| Has email | 8,104 (61.7%) |
+| Has website URL | 492 (3.7%) |
 
 ### By Entity Type
 
@@ -45,7 +45,7 @@ This dataset is intended as a free, open, community-maintained data utility for 
 | Dispensary | 5,678 |
 | Cultivator | 5,001 |
 | Other (distributor, manufacturer, processor, etc.) | 3,049 |
-| Breeder | 136 |
+| Breeder | 145 |
 | Bank (seed bank) | 18 |
 
 Some records have multiple types (e.g., `cultivator|dispensary` for vertically integrated businesses). Counts above reflect each type individually.
@@ -69,16 +69,15 @@ Some records have multiple types (e.g., `cultivator|dispensary` for vertically i
 
 | License Type | Records |
 |---|---|
-| State license | 13,029 |
-| CA Registered Seed Seller | 23 |
-| USDA hemp license (cross-referenced) | 11 |
+| State license | 13,040 |
+| CA Registered Seed Seller | 24 |
+| USDA hemp license (cross-referenced) | 2 |
 
 ### Flags
 
 | Flag | TRUE |
 |---|---|
-| `duplicate` — possible duplicate based on slug matching | 6,669 |
-| `sells_seeds` — name matches known seed breeder/bank directory | 166 |
+| `sells_seeds` — name matches known seed breeder/bank directory | 175 |
 | `delivery` — name or DBA contains "delivery" (delivery-only, no storefront) | 76 |
 
 ---
@@ -103,12 +102,11 @@ Some records have multiple types (e.g., `cultivator|dispensary` for vertically i
 | `lng` | Longitude (WGS 84). |
 | `phone` | Phone number. |
 | `email` | Email address. |
-| `license_usda` | `TRUE` if the business name fuzzy-matches a USDA hemp licensee. Cross-reference flag, not a license number. |
 | `license_state` | State-issued cannabis license number(s). Pipe-separated when a business holds multiple licenses at one address. |
-| `license_other` | Other license information. Values: `CA Registered Seed Seller`, `TRUE` (matched against breeder directory), or `FALSE`. |
+| `license_usda` | `TRUE` if the business name fuzzy-matches a USDA hemp licensee. Cross-reference flag, not a license number. |
 | `delivery` | `TRUE` if "delivery" appears in the business name or DBA. Indicates delivery-only operations with no physical storefront. |
 | `sells_seeds` | `TRUE` if the business name fuzzy-matches a known cannabis seed breeder or bank from the seedfinder.eu directory. Includes false positives — manual verification recommended. |
-| `duplicate` | `TRUE` if the `name_slug` or `dba_slug` appears more than once in the dataset. Expected for multi-location chains. Does not necessarily indicate a data error. |
+| `other_license` | Other license information. Values: `CA Registered Seed Seller`, `TRUE` (matched against breeder directory), or blank. |
 
 ---
 
@@ -131,7 +129,6 @@ State license data was collected from official regulatory portals in: AL, AZ, CA
 - **California confidential records** (~6,400 rows) have no street address, city, or ZIP code. The California Department of Cannabis Control does not publish this information. These records have a state license number and type but cannot be geocoded.
 - **Geocoding coverage is 49.5%.** Records without street addresses cannot be geocoded. City/state-level geocoding was not applied to avoid false precision.
 - **`sells_seeds` and `license_usda` are fuzzy matches**, not confirmed facts. The matching algorithm strips common business suffixes (LLC, Inc, Seeds, Genetics, etc.) before comparing. Short or generic names produce false positives. These flags are starting points for research, not definitive classifications.
-- **`duplicate` flags are expected for chains.** Multi-location businesses (e.g., dispensary chains) will have multiple rows with the same slug. The flag helps identify them but does not indicate which row to keep.
 - **ZIP codes with leading zeros.** US ZIP codes in MA (01xxx), CT (06xxx), NJ (07xxx), and PR (00xxx) begin with zero. Some software (notably Microsoft Excel) strips leading zeros when opening CSV files. The data is correct as published — if zeros appear missing, the file was modified by the software used to open it.
 
 ---
