@@ -163,17 +163,24 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Amazon Q** (AWS AI Assistant) — Pipeline architecture, data processing, AWS infrastructure (DynamoDB, Lambda, API Gateway), frontend development, community edit system, and documentation.
 
-Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database/breeder).  
+### Seedfinder.eu Audit
 
-This project was inspired by Seedfinder.eu's ambitious attempt to catalog 2,000+ cannabis breeders and seed banks. I originally hoped to use their list as a starting point for mapping licensed operators in the US. Unfortunately, the data quality made that impossible. I manually visited every single link in their breeder directory. 76.3% were broken, spam, malicious, parked domains, 404s, or redirects to low-quality/scam sites. I've compiled a full transparency report: CSV: Download the full audit [here](seedfindereu.csv)
-(Columns include: url, name, homepage, url_is_bad)
+Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database/breeder).
 
-Dear Seedfinder.eu team,
-Thank you for the idea and for maintaining a public directory — it sparked this entire effort. However, the current state of the links significantly undermines its usefulness. I'm releasing this audit in the hope it helps you clean up the data for the community.  Happy to share more details or collaborate. You can [buy me a beer](https://buymeacoffee.com/goddardshannon9) - cheers 🍻
+This project was inspired by Seedfinder.eu’s ambitious attempt to catalog **2,059+** cannabis breeders and seed banks. I originally hoped to use their list as a starting point.
 
-— Shannon
+**Reality check:** I manually visited every single link. **76.3%** were broken, spam, malicious, parked domains, 404s, or redirects to low-quality/scam sites.
 
-ps: yes, I really did manually click all 2,059 links  
+**Full transparency report:** [Download seedfindereu.csv](seedfindereu.csv)  
+(Columns: `url`, `name`, `homepage`, `url_is_bad`)
+
+**Dear Seedfinder.eu team,**  
+Thank you for the idea and for maintaining a public directory — it sparked this entire effort. However, the current state of the links significantly undermines its usefulness. I’m releasing this audit in the hope it helps you clean up the data for the community.  
+
+Happy to share more details or collaborate. You can [buy me a beer](https://buymeacoffee.com/goddardshannon9) — cheers 🍻
+
+— Shannon  
+*(ps: yes, I really did manually click all 2,059 links)*
 
 ---
 
