@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Ledger · US Cannabis License Directory</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fff;--fg:#111;--border:#e0e0e0;--hover:#f7f7f7;--muted:#888;--green:#2e7d32;--yellow:#f57f17;--red:#c62828;--radius:6px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--fg);font-size:14px;line-height:1.5;display:flex;flex-direction:column;min-height:100vh}
+header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+header h1{font-size:18px;font-weight:600;letter-spacing:-0.3px}
+header h1 span{color:var(--muted);font-weight:400}
+.btn{padding:8px 16px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--fg);font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:var(--fg);color:var(--bg)}
+main{flex:1;padding:24px;max-width:1200px;margin:0 auto;width:100%}
+.stats{display:flex;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.stat-card{padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius);flex:1;min-width:140px}
+.stat-card .number{font-size:28px;font-weight:700;letter-spacing:-1px}
+.stat-card .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px}
+.edit-list{display:flex;flex-direction:column;gap:12px}
+.edit-card{border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;transition:background .15s}
+.edit-card:hover{background:var(--hover)}
+.edit-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px}
+.edit-user{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px}
+.edit-user img{width:20px;height:20px;border-radius:50%}
+.edit-time{font-size:12px;color:var(--muted)}
+.edit-detail{font-size:13px;margin-bottom:4px}
+.edit-detail .col-name{font-weight:600;background:#f0f0f0;padding:2px 6px;border-radius:3px;font-size:12px}
+.edit-detail .business{color:var(--muted)}
+.edit-values{display:flex;gap:8px;align-items:center;font-size:13px;margin-top:8px}
+.old-val{background:#ffebee;padding:4px 8px;border-radius:4px;text-decoration:line-through;color:var(--red);max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.new-val{background:#e8f5e9;padding:4px 8px;border-radius:4px;color:var(--green);max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.arrow{color:var(--muted)}
+.status{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:3px 8px;border-radius:10px}
+.status.pending{background:#fff3e0;color:var(--yellow)}
+.status.approved{background:#e8f5e9;color:var(--green)}
+.status.rejected{background:#ffebee;color:var(--red)}
+.empty-state{text-align:center;padding:60px 20px;color:var(--muted)}
+.empty-state .icon{font-size:48px;margin-bottom:12px}
+.empty-state p{font-size:15px}
+.loading{text-align:center;padding:60px;color:var(--muted)}
+.dot-pulse{display:inline-flex;gap:4px}
+.dot-pulse span{width:6px;height:6px;background:var(--muted);border-radius:50%;animation:pulse .8s infinite}
+.dot-pulse span:nth-child(2){animation-delay:.15s}
+.dot-pulse span:nth-child(3){animation-delay:.3s}
+@keyframes pulse{0%,80%,100%{opacity:.3;transform:scale(.8)}40%{opacity:1;transform:scale(1)}}
+footer{padding:16px 24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--fg)}
+@media(max-width:768px){
+  header{padding:14px 16px}
+  main{padding:16px}
+  .stats{flex-direction:column}
+  .stat-card{min-width:auto}
+  .edit-values{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Edit Ledger <span>· Community Contributions</span></h1>
+  <a href="index.html" class="btn">← Back to Directory</a>
+</header>
+
+<main>
+  <div class="stats" id="stats" style="display:none">
+    <div class="stat-card">
+      <div class="number" id="totalEdits">0</div>
+      <div class="label">Total Edits</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" id="uniqueUsers">0</div>
+      <div class="label">Contributors</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" id="pendingEdits">0</div>
+      <div class="label">Pending Review</div>
+    </div>
+    <div class="stat-card">
+      <div class="number" id="todayEdits">0</div>
+      <div class="label">Today</div>
+    </div>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="dot-pulse"><span></span><span></span><span></span></div>
+    <span>&nbsp; Loading ledger...</span>
+  </div>
+
+  <div class="edit-list" id="editList"></div>
+</main>
+
+<footer>
+  <span>© 2026 Shannon Goddard · Loyal9 LLC · <a href="https://doi.org/10.5281/zenodo.19800772">DOI: 10.5281/zenodo.19800772</a></span>
+  <span>AWS cost this month: $0.00 · <a href="https://github.com/sponsors/Shannon-Goddard">GitHub ❤️ Sponsor</a></span>
+</footer>
+
+<script>
+const API_BASE = 'https://f5o10xxd59.execute-api.us-east-1.amazonaws.com';
+
+async function loadLedger() {
+  try {
+    const resp = await fetch(`${API_BASE}/ledger`);
+    const edits = await resp.json();
+
+    document.getElementById('loading').style.display = 'none';
+
+    if (!edits.length) {
+      document.getElementById('editList').innerHTML =
+        '<div class="empty-state"><div class="icon">📋</div><p>No edits yet. Be the first to contribute!</p><a href="index.html" class="btn" style="margin-top:16px">Open Directory</a></div>';
+      document.getElementById('stats').style.display = 'flex';
+      return;
+    }
+
+    const users = new Set(edits.map(e => e.github_user));
+    const pending = edits.filter(e => e.status === 'pending').length;
+    const today = new Date().toISOString().split('T')[0];
+    const todayCount = edits.filter(e => e.timestamp && e.timestamp.startsWith(today)).length;
+
+    document.getElementById('totalEdits').textContent = edits.length;
+    document.getElementById('uniqueUsers').textContent = users.size;
+    document.getElementById('pendingEdits').textContent = pending;
+    document.getElementById('todayEdits').textContent = todayCount;
+    document.getElementById('stats').style.display = 'flex';
+
+    document.getElementById('editList').innerHTML = edits.map(e => {
+      const time = e.timestamp ? new Date(e.timestamp).toLocaleString() : 'Unknown';
+      const oldVal = e.old_value || '<empty>';
+      const newVal = e.new_value || '<empty>';
+      return `
+        <div class="edit-card">
+          <div class="edit-header">
+            <div class="edit-user">
+              <img src="https://github.com/${esc(e.github_user)}.png?size=40" alt="">
+              ${esc(e.github_user)}
+            </div>
+            <div style="display:flex;align-items:center;gap:10px">
+              <span class="status ${esc(e.status || 'pending')}">${esc(e.status || 'pending')}</span>
+              <span class="edit-time">${esc(time)}</span>
+            </div>
+          </div>
+          <div class="edit-detail">
+            <span class="col-name">${esc(e.column)}</span>
+            <span class="business">on ${esc(e.business_name || e.row_index)}</span>
+          </div>
+          <div class="edit-values">
+            <span class="old-val" title="${esc(oldVal)}">${esc(oldVal)}</span>
+            <span class="arrow">→</span>
+            <span class="new-val" title="${esc(newVal)}">${esc(newVal)}</span>
+          </div>
+        </div>`;
+    }).join('');
+
+  } catch(e) {
+    document.getElementById('loading').innerHTML = '❌ Failed to load ledger: ' + e.message;
+  }
+}
+
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+loadLedger();
+</script>
+</body>
+</html>
