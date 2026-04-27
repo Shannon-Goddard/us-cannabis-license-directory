@@ -1,10 +1,10 @@
-# CI Seed Registry — Data Pipeline
+# CI Seed Registry — US Cannabis & Hemp License Directory
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19800772.svg)](https://doi.org/10.5281/zenodo.19800772)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Owner:** Shannon Goddard — Loyal9 LLC
-**Status:** Active
+**Status:** Active · Community Editable
 
 ---
 
@@ -12,34 +12,63 @@
 
 This registry provides a unified, structured view of the US cannabis and hemp licensing landscape. By consolidating fragmented state-level portals and USDA data, it supports compliance research and market analysis necessitated by evolving federal agricultural policies.
 
+The dataset is published with a DOI for academic citation. The community edit system allows anyone with a GitHub account to improve the data — every edit is logged in an immutable ledger.
+
+---
+
+## Live Site
+
+🌐 [**Open the Directory**](https://shannon-goddard.github.io/us-cannabis-license-directory/)
+
+| Page | Description |
+|---|---|
+| [Directory](https://shannon-goddard.github.io/us-cannabis-license-directory/) | Searchable, sortable table — 29,633 records |
+| [Edit Ledger](https://shannon-goddard.github.io/us-cannabis-license-directory/ledger.html) | Every community edit, fully transparent |
+| [How to Contribute](https://shannon-goddard.github.io/us-cannabis-license-directory/contributing.html) | Step-by-step guide for editors |
+
 ---
 
 ## Project Structure
 
 ```
-NEW-SEEDS-LAW/
+us-cannabis-license-directory/
+├── aws-setup/                         # AWS infrastructure templates & docs
+│   ├── aws-setup.md                   # Architecture, deploy steps, cost breakdown
+│   ├── trust-policy.json              # IAM trust policy
+│   ├── lambda-policy.json             # IAM permissions (sanitized)
+│   └── lambda/                        # Lambda function source code
+│       ├── submit_edit.py             # POST /edit — write to DynamoDB
+│       ├── get_ledger.py              # GET /ledger — read from DynamoDB
+│       └── github_oauth.py            # POST /auth/github — OAuth exchange
 ├── pipeline/
 │   ├── 01_usda_active_states/         # USDA hemp licensee data (3,371 active)
-│   ├── 02_state_license_retail_list/  # 25 state cannabis license portals (14,507 active)
-│   ├── 03_seed_suppliers/             # Seedfinder.eu breeder directory (2,059 names, 487 verified)
-│   ├── 04_human_in_the_loop/         # Manual review, dedup, cross-reference matching
+│   ├── 02_state_license_retail_list/  # 25 state cannabis license portals
+│   ├── 03_seed_suppliers/             # Seedfinder.eu breeder directory
+│   ├── 04_human_in_the_loop/         # Manual review, dedup, cross-reference
 │   ├── 05_seed_breeders/             # Breeder master + CA registered seed sellers
-│   └── pdf-to-csv.html              # In-browser PDF-to-CSV converter (client-side, no install)
-├── raw.csv                            # Published dataset — 13,128 US cannabis/hemp businesses
-├── raw.json                           # Same dataset in JSON format
-├── SOURCE.md                          # Data dictionary, methodology, citation info for DOI
+│   └── pdf-to-csv.html              # In-browser PDF-to-CSV converter
+├── assets/img/                        # Badge images
+├── index.html                         # Directory UI — search, sort, edit
+├── ledger.html                        # Edit ledger UI
+├── contributing.html                  # How to contribute guide
+├── us-cannabis-license-directory.csv  # Community dataset — 29,633 records, 38 columns
+├── raw.csv                            # Published DOI dataset — 13,128 records, 21 columns
+├── raw.json                           # Same DOI dataset in JSON format
+├── CONTRIBUTING.md                    # Contribution guidelines
+├── SOURCE.md                          # Data dictionary, methodology, citation
+├── LICENSE                            # MIT License
 └── README.md                          # This file
 ```
 
-Each pipeline folder has its own README with source details, scripts, and output descriptions.
-
 ---
 
-## raw.csv / raw.json
+## Datasets
+
+### Published Dataset (DOI)
 
 📥 [Download raw.csv](raw.csv) · 📥 [Download raw.json](raw.json)
 
-The published dataset. 13,128 records across 35 US states. 21 columns. Available in CSV and JSON formats.
+The frozen, citable dataset. 13,128 records across 35 US states. 21 columns.
 
 | Type | Count |
 |---|---|
@@ -51,35 +80,62 @@ The published dataset. 13,128 records across 35 US states. 21 columns. Available
 
 Top states: CA (7,743), CO (1,390), MI (857), NY (801), OR (468)
 
-See `SOURCE.md` for full column reference, methodology, known limitations, and citation format.
+See `SOURCE.md` for full column reference, methodology, and known limitations.
+
+### Community Dataset
+
+📥 [Download us-cannabis-license-directory.csv](us-cannabis-license-directory.csv)
+
+The living dataset. 29,633 records. 38 columns (20 original + 18 community-editable). This is the file the [live directory](https://shannon-goddard.github.io/us-cannabis-license-directory/) reads from.
+
+Community columns include: `Business_Category`, `Product_Focus`, `Is_Medical`, `Is_Adult_Use`, `Payment_Methods`, `Ownership_Type`, `Hours_of_Operation`, `Instagram_URL`, `Google_Place_ID`, and more.
+
+---
+
+## Community Edit System
+
+Anyone with a GitHub account can edit records directly in the browser.
+
+1. **Login with GitHub** — OAuth, read-only profile access
+2. **Click a cell** — one cell at a time
+3. **Submit** — edit is logged to AWS DynamoDB with your username, timestamp, and the change
+4. **Ledger** — every edit is visible in the [Edit Ledger](https://shannon-goddard.github.io/us-cannabis-license-directory/ledger.html)
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) or the [How to Contribute](https://shannon-goddard.github.io/us-cannabis-license-directory/contributing.html) page for the full guide.
+
+### Architecture
+
+```
+Browser → API Gateway (HTTP) → Lambda (Python) → DynamoDB
+```
+
+| Service | Purpose | Cost |
+|---|---|---|
+| API Gateway | 3 routes: /edit, /ledger, /auth/github | $0.00/month |
+| Lambda | 3 functions: submit, ledger, OAuth | $0.00/month |
+| DynamoDB | Immutable edit ledger | $0.00/month |
+
+Full infrastructure docs: [`aws-setup/aws-setup.md`](aws-setup/aws-setup.md)
 
 ---
 
 ## Getting Started
 
-You can use the data immediately via the `raw.csv` / `raw.json` files, or explore the `pdf-to-csv.html` tool for manual processing of new state records.
-
-To run the Python scripts in the `pipeline/` directory:
+Use the data immediately via the CSV/JSON files, or explore the live directory.
 
 ```bash
 git clone https://github.com/Shannon-Goddard/us-cannabis-license-directory.git
 ```
 
-Each subdirectory contains specific scripts for data fetching and cleaning.
+Each `pipeline/` subdirectory contains specific scripts for data fetching and cleaning.
 
 ---
 
 ## Data Maintenance
 
 - **Last Full Sync:** April 2026
-- **Update Frequency:** Data will not be updated in this repo.
+- **Update Frequency:** The DOI dataset (`raw.csv`) will not be updated. The community dataset (`us-cannabis-license-directory.csv`) is updated by contributors.
 - **Verification:** Verified records are cross-referenced via `04_human_in_the_loop`.
-
----
-
-## Contributing
-
-Contributions will be welcomed on the map repo where the data will be used. Link will be dropped here when available.
 
 ---
 
@@ -103,8 +159,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Credits
 
-**Shannon Goddard** — Research, data collection, legal analysis, manual verification.
-**Amazon Q** (AWS AI Assistant) — Scripts, pipeline architecture, data processing, documentation.
+**Shannon Goddard** — Research, data collection, legal analysis, manual verification, and the vision that turned a fragmented regulatory landscape into a single open dataset.
+
+**Amazon Q** (AWS AI Assistant) — Pipeline architecture, data processing, AWS infrastructure (DynamoDB, Lambda, API Gateway), frontend development, community edit system, and documentation.
 
 Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database/breeder).
 
