@@ -1,6 +1,6 @@
 # CI Seed Registry — US Cannabis & Hemp License Directory
 
-[![DOI](https://zenodo.org/badge/1221929074.svg)](https://doi.org/10.5281/zenodo.19800772)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.19800772-blue.svg)](https://doi.org/10.5281/zenodo.19800772)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Owner:** Shannon Goddard — Loyal9 LLC
@@ -163,7 +163,17 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Amazon Q** (AWS AI Assistant) — Pipeline architecture, data processing, AWS infrastructure (DynamoDB, Lambda, API Gateway), frontend development, community edit system, and documentation.
 
-Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database/breeder).
+Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database/breeder).  
+
+This project was inspired by Seedfinder.eu's ambitious attempt to catalog 2,000+ cannabis breeders and seed banks. I originally hoped to use their list as a starting point for mapping licensed operators in the US. Unfortunately, the data quality made that impossible. I manually visited every single link in their breeder directory. 76.3% were broken, spam, malicious, parked domains, 404s, or redirects to low-quality/scam sites. I've compiled a full transparency report: CSV: Download the full audit [here](seedfindereu.csv)
+(Columns include: url, name, homepage, url_is_bad)
+
+Dear Seedfinder.eu team,
+Thank you for the idea and for maintaining a public directory — it sparked this entire effort. However, the current state of the links significantly undermines its usefulness. I'm releasing this audit in the hope it helps you clean up the data for the community.  Happy to share more details or collaborate. You can [buy me a beer](https://buymeacoffee.com/goddardshannon9) - cheers 🍻
+
+— Shannon
+
+ps: yes, I really did manually click all 2,059 links  
 
 ---
 
