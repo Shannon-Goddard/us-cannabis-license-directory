@@ -11,8 +11,8 @@ Contact: legal@loyal9.app
 
 This Disclaimer applies to the US Cannabis License Directory ("the Site") and all associated datasets operated at:
 
-- https://shannon-goddard.github.io/us-cannabis-license-directory
-- https://poweredby.ci/us-cannabis-license-directory
+- https://directory.poweredbyci.live
+- https://directory.poweredbyci.live
 
 ---
 

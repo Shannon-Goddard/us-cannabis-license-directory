@@ -10,7 +10,7 @@ This directory is community-maintained through a simple browser-based editing sy
 
 ### 1. Sign In with GitHub
 
-Click the **Login with GitHub** button on the [directory page](https://shannon-goddard.github.io/us-cannabis-license-directory/). You'll be redirected to GitHub to authorize read-only access to your public profile. We only use your username and avatar — nothing else.
+Click the **Login with GitHub** button on the [directory page](https://directory.poweredbyci.live/). You'll be redirected to GitHub to authorize read-only access to your public profile. We only use your username and avatar — nothing else.
 
 ### 2. Edit a Cell
 
@@ -42,7 +42,7 @@ All edits start with a `pending` status.
 
 ### 4. View the Ledger
 
-Every edit is logged in the [Edit Ledger](https://shannon-goddard.github.io/us-cannabis-license-directory/ledger.html). You can see who edited what, when, and the before/after values. Full transparency.
+Every edit is logged in the [Edit Ledger](https://directory.poweredbyci.live/ledger.html). You can see who edited what, when, and the before/after values. Full transparency.
 
 ---
 

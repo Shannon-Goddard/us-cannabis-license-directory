@@ -11,8 +11,8 @@ Contact: legal@loyal9.app
 
 This Privacy Policy applies to the US Cannabis License Directory ("the Site") operated at:
 
-- https://shannon-goddard.github.io/us-cannabis-license-directory
-- https://poweredby.ci/us-cannabis-license-directory
+- https://directory.poweredbyci.live
+- https://directory.poweredbyci.live
 
 ---
 
@@ -38,7 +38,7 @@ When you submit an edit, we store:
 - The old value and new value
 - The business name (for context)
 
-This data is stored in AWS DynamoDB and is publicly visible in the [Edit Ledger](https://shannon-goddard.github.io/us-cannabis-license-directory/ledger.html).
+This data is stored in AWS DynamoDB and is publicly visible in the [Edit Ledger](https://directory.poweredbyci.live/ledger.html).
 
 ### 1.3 Automatically Collected Information
 

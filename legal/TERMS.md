@@ -11,8 +11,8 @@ Contact: legal@loyal9.app
 
 These Terms of Use ("Terms") govern your access to and use of the US Cannabis License Directory ("the Site") operated at:
 
-- https://shannon-goddard.github.io/us-cannabis-license-directory
-- https://poweredby.ci/us-cannabis-license-directory
+- https://directory.poweredbyci.live
+- https://directory.poweredbyci.live
 
 By accessing or using the Site, you agree to these Terms. If you do not agree, do not use the Site.
 

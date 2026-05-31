@@ -18,13 +18,13 @@ The dataset is published with a DOI for academic citation. The community edit sy
 
 ## Live Site
 
-🌐 [**Open the Directory**](https://shannon-goddard.github.io/us-cannabis-license-directory/)
+🌐 [**Open the Directory**](https://directory.poweredbyci.live/)
 
 | Page | Description |
 |---|---|
-| [Directory](https://shannon-goddard.github.io/us-cannabis-license-directory/) | Searchable, sortable table — 29,633 records |
-| [Edit Ledger](https://shannon-goddard.github.io/us-cannabis-license-directory/ledger.html) | Every community edit, fully transparent |
-| [How to Contribute](https://shannon-goddard.github.io/us-cannabis-license-directory/contributing.html) | Step-by-step guide for editors |
+| [Directory](https://directory.poweredbyci.live/) | Searchable, sortable table — 29,633 records |
+| [Edit Ledger](https://directory.poweredbyci.live/ledger.html) | Every community edit, fully transparent |
+| [How to Contribute](https://directory.poweredbyci.live/contributing.html) | Step-by-step guide for editors |
 
 ---
 
@@ -86,7 +86,7 @@ See `SOURCE.md` for full column reference, methodology, and known limitations.
 
 📥 [Download us-cannabis-license-directory.csv](us-cannabis-license-directory.csv)
 
-The living dataset. 29,633 records. 38 columns (20 original + 18 community-editable). This is the file the [live directory](https://shannon-goddard.github.io/us-cannabis-license-directory/) reads from.
+The living dataset. 29,633 records. 38 columns (20 original + 18 community-editable). This is the file the [live directory](https://directory.poweredbyci.live/) reads from.
 
 Community columns include: `Business_Category`, `Product_Focus`, `Is_Medical`, `Is_Adult_Use`, `Payment_Methods`, `Ownership_Type`, `Hours_of_Operation`, `Instagram_URL`, `Google_Place_ID`, and more.
 
@@ -99,9 +99,9 @@ Anyone with a GitHub account can edit records directly in the browser.
 1. **Login with GitHub** — OAuth, read-only profile access
 2. **Click a cell** — one cell at a time
 3. **Submit** — edit is logged to AWS DynamoDB with your username, timestamp, and the change
-4. **Ledger** — every edit is visible in the [Edit Ledger](https://shannon-goddard.github.io/us-cannabis-license-directory/ledger.html)
+4. **Ledger** — every edit is visible in the [Edit Ledger](https://directory.poweredbyci.live/ledger.html)
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) or the [How to Contribute](https://shannon-goddard.github.io/us-cannabis-license-directory/contributing.html) page for the full guide.
+See [CONTRIBUTING.md](CONTRIBUTING.md) or the [How to Contribute](https://directory.poweredbyci.live/contributing.html) page for the full guide.
 
 ### Architecture
 
