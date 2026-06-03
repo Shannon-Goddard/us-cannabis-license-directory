@@ -169,10 +169,10 @@ Breeder directory sourced from [seedfinder.eu](https://seedfinder.eu/en/database
 
 This project was inspired by Seedfinder.eu’s ambitious attempt to catalog **2,059+** cannabis breeders and seed banks. I originally hoped to use their list as a starting point.
 
-**Reality check:** I manually visited every single link. **76.3%** were broken, spam, malicious, parked domains, 404s, or redirects to low-quality/scam sites.
+**Reality check:** I manually visited every single link. **71.6%** were broken, spam, malicious, parked domains, 404s, or redirects to low-quality/scam sites. All links clicked live on [YouTube](https://youtu.be/7yOy1-DM4hs)
 
-**Full transparency report:** [Download seedfindereu.csv](seedfindereu.csv)  
-(Columns: `url`, `name`, `homepage`, `url_is_bad`)
+**Full transparency report:** [Download seedfindereu.xlsx](seedfindereu.xlsx)  
+(Columns: `breeder_links`,  `url_is_good`)
 
 **Dear Seedfinder.eu team,**  
 Thank you for the idea and for maintaining a public directory — it sparked this entire effort. However, the current state of the links significantly undermines its usefulness. I’m releasing this audit in the hope it helps you clean up the data for the community.  
